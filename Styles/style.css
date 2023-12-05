@@ -25,13 +25,47 @@ body {
 }
 
 .card1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background-color: hsl(234, 85%, 45%);
   text-align: center;
   color: white;
-  padding: 2rem;
+  padding: 1rem;
+  line-height: 2.2rem;
   border-bottom-left-radius: 24px;
   border-bottom-right-radius: 24px;
 }
+.card1 .description {
+  font-size: 1.125rem;
+  text-wrap: balance;
+  opacity: 0.6;
+  margin-bottom: 24px;
+}
+.card1 .circle {
+  background-color: darkblue;
+  border-radius: 50%;
+  padding: 32px;
+  margin: 24px;
+  height: auto;
+  width: 20%;
+  text-align: center;
+}
+.card1 .circle .totalscore {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: space-evenly;
+  font-weight: 800;
+  font-size: 3rem;
+}
+.card1 .circle .maxscore {
+  font-size: 0.875rem;
+  opacity: 0.7;
+}
+
 .card2 {
   background-color: white;
 }
@@ -94,8 +128,11 @@ body {
 }
 
 .continue {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  background-color: hsl(234, 62%, 26%);
+  text-align: center;
+  padding: 1rem;
+}
+.continue a {
+  text-decoration: none;
+  color: white;
 }/*# sourceMappingURL=style.css.map */
