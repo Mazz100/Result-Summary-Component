@@ -41,8 +41,8 @@ body {
   body .card1 {
     grid-area: 1/1/1/1;
     padding: 0;
-    padding-right: 2rem;
-    padding-left: 2rem;
+    padding-right: 32px;
+    padding-left: 32px;
     justify-content: center;
     border-top-left-radius: 24px;
     border-top-right-radius: 24px;
@@ -53,6 +53,7 @@ body {
   }
   body .card1 .description {
     text-wrap: wrap;
+    padding-bottom: 0;
   }
   body .card2 {
     grid-area: 1/2/2/2;
@@ -72,11 +73,10 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: hsl(234, 85%, 45%);
+  background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
   text-align: center;
   color: white;
-  padding: 1rem;
-  line-height: 2.2rem;
+  padding: 16px;
   border-bottom-left-radius: 24px;
   border-bottom-right-radius: 24px;
 }
@@ -96,16 +96,16 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: darkblue;
+  background: linear-gradient(hsl(256, 72%, 46%), hsla(241, 72%, 46%, 0));
   border-radius: 50%;
   padding: 32px;
   margin: 24px;
-  width: 5.5rem;
+  width: 5rem;
+  line-height: 1.1;
 }
 .card1 .circle .totalscore {
   font-weight: 800;
   font-size: 3.5rem;
-  padding-bottom: 16px;
 }
 .card1 .circle .maxscore {
   font-size: 0.875rem;
@@ -189,5 +189,5 @@ body {
 }
 .card2 .continue a:hover {
   cursor: pointer;
-  background-color: hsl(234, 85%, 45%);
+  background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
 }/*# sourceMappingURL=style.css.map */
