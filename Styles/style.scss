@@ -87,6 +87,7 @@ body {
             grid-area: 1/2/2/2;
             justify-content: center;
             padding-left: 10px;
+
             h2 {
                 padding-top: 16px;
 
@@ -112,7 +113,7 @@ body {
     border-bottom-right-radius: 24px;
 
     .results {
-        font-size: 1.125rem;
+        font-size: 1.5rem;
         opacity: 0.7;
     }
 
@@ -134,11 +135,11 @@ body {
         margin: 24px;
         height: 7rem;
         width: 7rem;
-       
+
 
         .totalscore {
             font-weight: 800;
-            font-size: 3.5rem;
+            font-size: 4rem;
 
         }
 
@@ -166,20 +167,22 @@ body {
         font-weight: 700;
     }
 
-    .stats {
+    ul{
+        padding: 0;
+    }
+
+    li{
+        list-style-type: none;
+        padding: 0;   
+    }
+
+    .Stats{
         @include FlexFunc(row);
         justify-content: space-between;
         padding: 1rem;
         margin: 24px;
         border-radius: 12px;
-    }
-
-    .lefthalf {
-        @include FlexFunc(row);
-
-        img {
-            padding-right: 10px;
-        }
+        
     }
 
     //Stats Styling
@@ -189,6 +192,7 @@ body {
         p {
             color: hsl(0, 100%, 67%);
             font-weight: 800;
+            
         }
     }
 
@@ -220,23 +224,23 @@ body {
     }
 
     //Link and Active States
-    .continue {
-        @include FlexFunc(column);
+    a {
+        display: block;
+        text-decoration: none;
+        text-align: center;
+        color: white;
+        background-color: hsl(234, 67%, 18%);
+        padding: 1rem;
+        border-radius: 24px;
+        margin-right: 16px;
+        margin-left: 16px;
 
-        a {
-            text-decoration: none;
-            text-align: center;
-            color: white;
-            background-color: hsl(234, 67%, 18%);
-            padding: 1rem;
-            border-radius: 24px;
-            width: 80%;
-        }
-
-        a:hover {
-            cursor: pointer;
-            background: $card1_BG_gradient;
-        }
     }
+
+    a:hover {
+        cursor: pointer;
+        background: $card1_BG_gradient;
+    }
+
 
 }

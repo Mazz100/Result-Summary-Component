@@ -84,7 +84,7 @@ body {
   border-bottom-right-radius: 24px;
 }
 .card1 .results {
-  font-size: 1.125rem;
+  font-size: 1.5rem;
   opacity: 0.7;
 }
 .card1 .description {
@@ -108,7 +108,7 @@ body {
 }
 .card1 .circle .totalscore {
   font-weight: 800;
-  font-size: 3.5rem;
+  font-size: 4rem;
 }
 .card1 .circle .maxscore {
   font-size: 0.875rem;
@@ -128,7 +128,14 @@ body {
 .card2 .score {
   font-weight: 700;
 }
-.card2 .stats {
+.card2 ul {
+  padding: 0;
+}
+.card2 li {
+  list-style-type: none;
+  padding: 0;
+}
+.card2 .Stats {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -137,15 +144,6 @@ body {
   padding: 1rem;
   margin: 24px;
   border-radius: 12px;
-}
-.card2 .lefthalf {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
-.card2 .lefthalf img {
-  padding-right: 10px;
 }
 .card2 .Reaction {
   background-color: hsla(0, 100%, 67%, 0.1);
@@ -175,22 +173,18 @@ body {
   color: hsl(234, 85%, 45%);
   font-weight: 800;
 }
-.card2 .continue {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.card2 .continue a {
+.card2 a {
+  display: block;
   text-decoration: none;
   text-align: center;
   color: white;
   background-color: hsl(234, 67%, 18%);
   padding: 1rem;
   border-radius: 24px;
-  width: 80%;
+  margin-right: 16px;
+  margin-left: 16px;
 }
-.card2 .continue a:hover {
+.card2 a:hover {
   cursor: pointer;
   background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
 }/*# sourceMappingURL=style.css.map */
